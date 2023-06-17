@@ -61,7 +61,6 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody,
             <div className="container" key={props.dish}>
                 <div className="row">
                     <RenderDish dish={props.dish}/>
-
                     <RenderComments comments={props.dish.comments}/>
                 </div>
             </div>

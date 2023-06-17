@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { Media } from 'reactstrap';
 import { Card, CardImg, CardImgOverlay, CardText, CardBody,
   CardTitle } from 'reactstrap';
-import DishDetail from './DishdetailComponent';
 
-function RenderMenuItem ({dish, onClick}) {
+
+function RenderMenuItem ({dish}) {
     return (
-        <Card
-            onClick={() => onClick(dish.id)}>
+        <Card>
             <CardImg width="100%" src={dish.image} alt={dish.name} />
             <CardImgOverlay>
                 <CardTitle>{dish.name}</CardTitle>
@@ -30,7 +29,7 @@ const Menu = (props) => {
         <div className="container">
             <div className="row">
                 {menu}
-            </div>
+            </div> 
         </div>
     );
 }
